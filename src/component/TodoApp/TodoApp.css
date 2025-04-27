@@ -36,17 +36,30 @@ ul li {
     color: #088696;
     border-radius: 5px;
     display: flex;
-
-
+    /* Important for aligning items */
+    justify-content: space-between;
+    /* Pushes content to the edges */
+    align-items: center;
+    /* Vertically center items */
 }
 
-ul li i {
+.icon-container {
+    display: flex;
+    /* Make icons container a flex container */
+    gap: 10px;
+    /* Space between the icons */
+}
 
-    text-align: right;
-
-    flex: 1;
+.edit-icon {
+    margin-left: auto;
+    /* Push edit icon to the right (removed) */
     cursor: pointer;
+    color: #088696;
+}
 
+.delete-icon {
+    cursor: pointer;
+    color: #088696;
 }
 
 input::placeholder {

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './TodoApp.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 export default class TodoApp extends Component {
     state = {
         input: "", items: [],
@@ -25,7 +27,8 @@ export default class TodoApp extends Component {
 
                 <ul>
                     {items.map((data, index) => {
-                        return < li key={index} > {data}<i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash-can" onClick={() => this.deleteItem(index)} ></i> </li>
+                        return < li key={index} > {data}<div className='icon-container'><FontAwesomeIcon icon={faPen} className="edit-icon" />
+                            <FontAwesomeIcon icon={faTrashCan} className="delete-icon" onClick={() => this.deleteItem(index)} /></div> </li>
                     })}
 
                 </ul >
