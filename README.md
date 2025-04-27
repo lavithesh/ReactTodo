@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# ToDo List 
+![img alt](https://github.com/lavithesh/ReactTodo/blob/master/Screenshot%20(312).png?raw=true)
+#Delete Operation using Todo
+![img alt](https://github.com/lavithesh/ReactTodo/blob/master/Screenshot%20(314).png?raw=true)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
